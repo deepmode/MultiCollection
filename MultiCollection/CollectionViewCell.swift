@@ -9,10 +9,31 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
+    
+    @IBOutlet private weak var collectionView: UICollectionView!
 
+    @IBOutlet weak var textLabel:UILabel!
+    
+    private var title:String? {
+        didSet {
+            self.textLabel?.text = title
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func setupCell(title:String) {
+        self.title = title
+    }
+    
+//    func setCollectionViewDataSourceDelegate <D: protocol<UICollectionViewDataSource, UICollectionViewDelegate>>(dataSourceDelegate: D, forRow row: Int) {
+//        self.collectionView?.delegate = dataSourceDelegate
+//        self.collectionView?.dataSource = dataSourceDelegate
+//        self.collectionView?.tag = row
+//        self.collectionView?.reloadData()
+//    }
 
 }

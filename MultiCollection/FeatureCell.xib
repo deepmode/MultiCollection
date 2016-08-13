@@ -7,13 +7,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="MultiCollection" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeatureCell" id="gTV-IL-0wX" customClass="FeatureCell" customModule="MultiCollection" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18P-UM-oVR">
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUL-S7-tX8">
                         <rect key="frame" x="4" y="14" width="42" height="21"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -24,12 +24,13 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstItem="18P-UM-oVR" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="YVP-x9-vOQ"/>
-                <constraint firstItem="18P-UM-oVR" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="xgZ-kM-4cm"/>
+                <constraint firstItem="bUL-S7-tX8" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Xmb-c4-mHM"/>
+                <constraint firstItem="bUL-S7-tX8" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="khC-W2-wy7"/>
             </constraints>
             <connections>
-                <outlet property="textLabel" destination="18P-UM-oVR" id="d27-AW-MRb"/>
+                <outlet property="textLabel" destination="bUL-S7-tX8" id="BoE-Qb-D3B"/>
             </connections>
+            <point key="canvasLocation" x="319" y="396"/>
         </collectionViewCell>
     </objects>
 </document>
